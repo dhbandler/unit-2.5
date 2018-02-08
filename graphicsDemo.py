@@ -16,11 +16,14 @@ blueCircle = CircleAsset(100, blackOutline, blue) #radius, outline, fill
 greenEllipse = EllipseAsset(100,50,blackOutline, green) #width, height, outline, fill
 blackLine = LineAsset(50,160, blackOutline) #x endpoint (for ending), y endpoint (for ending starting from top left), linestyle
 redTriangle = PolygonAsset([(0,150), (120,230), (60,450)], blackOutline, red) #endpoints (list), outline, fill
+text = TextAsset("you stupid", fill=green,style= "bold 40pt Georgia") #test, other options
 
 Sprite(redRectangle)
 Sprite(blueCircle,(300,200)) #sprite and coordinates
 Sprite(greenEllipse,(150,100))
 Sprite(blackLine)
 Sprite(redTriangle)
+Sprite(text, (500,400))
+
 
 App().run()
